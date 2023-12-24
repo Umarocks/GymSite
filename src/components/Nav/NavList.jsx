@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function NavList() {
   return (
     <>
-      <ul className="flex gap-9 text-white text-[16px] font-medium">
+      <ul className="flex gap-9 text-black-200 text-[16px] font-medium">
         <li className="curson-pointer">
           <Link>Home</Link>
         </li>
