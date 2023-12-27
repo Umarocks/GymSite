@@ -3,7 +3,7 @@ import Navbar from "./components/Nav/Navbar";
 import "./App.css";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
-
+import Featured from "./components/Featured/Featured";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -12,6 +12,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Featured />
     </>
   );
 }

@@ -20,10 +20,14 @@ body {
 }
 
 .container-hero {
-  max-width: 111.6rem;
+  max-width: 124rem;
   margin: 0 auto;
 }
 
+.page-padding {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
 .container {
   max-width: 120rem;
   margin: 0 auto;
@@ -82,8 +86,17 @@ body {
   padding-right: 2.5rem;
 }
 
+.card-item-div {
+  transition: all 0.2s;
+}
+
+.card-item-div:hover {
+  background-image: url("../src/images/who-we-are/info-card-bg.jpg");
+  color: white;
+}
+
 .about-cta {
-  padding: 1.82rem 3.8rem;
+  padding: 1.82rem 3.6rem;
   transition: all 0.3s;
 }
 
@@ -100,7 +113,7 @@ body {
 
 .about-cta:hover:after {
   content: "";
-  width: 20rem;
+  width: 19.5rem;
   height: 5.5rem;
   border: 1px solid #ff0336;
   position: absolute;

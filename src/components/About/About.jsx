@@ -6,14 +6,11 @@ function About() {
       <div className="container">
         <section className="flex flex-col justify-between gap-2 about-section pb-[20rem]">
           <div className="container page-padding">
-            {/* about cards */}
             <div className="flex gap-10 -mt-[8.5rem]">
               <AboutCarts />
             </div>
 
-            {/* text-img div */}
-            <div className=" grid grid-cols-[50fr,50fr] gap-[1rem]">
-              {/* about text */}
+            <div className=" grid grid-cols-[50fr,50fr] gap-[3rem]">
               <div className="mt-[10.5rem] relative">
                 <p className="text-white font-semibold text-[15px] relative uppercase z-10 pl-16 mb-12">
                   who we are
@@ -23,7 +20,7 @@ function About() {
                   alt="text_bg"
                   className="w-[31%] absolute -top-[6px]"
                 />
-                <h2 className="text-[34px] font-bold leading-tight mb-6 w-[60rem]">
+                <h2 className="text-[35px] font-bold leading-tight mb-6 w-[60rem]">
                   Take Your Health And Body To Next Level
                 </h2>
                 <p className="text-[16px] text-[#646464] font-medium">
@@ -67,7 +64,7 @@ function About() {
                     </h3>
                   </div>
                 </div>
-                {/* cta button */}
+
                 <MainButton
                   color={`text-white`}
                   bg={`bg-[#3f3f3f]`}
@@ -76,7 +73,7 @@ function About() {
                   hover={`hover:bg-[#FF0336]`}
                 />
               </div>
-              {/* img side */}
+
               <div className="relative">
                 <img
                   src="../images/who-we-are/girl-run.png"
