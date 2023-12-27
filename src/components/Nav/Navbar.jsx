@@ -15,7 +15,7 @@ function Navbar() {
 
   const [sticky, setSticky] = useState(false);
   const handleScroll = () => {
-    if (window.scrollY > 1136) {
+    if (window.scrollY > 10) {
       setSticky(true);
     } else {
       setSticky(false);
@@ -30,7 +30,6 @@ function Navbar() {
           sticky ? "bg-black shadow-xl" : "bg-transparent"
         }`}
       >
-        <h3 className="text-white">${window.scrollY}</h3>
         <img src="../../../images/logo/logo.svg" alt="logo_img" />
         <NavList />
         <div className="flex items-center gap-10">
