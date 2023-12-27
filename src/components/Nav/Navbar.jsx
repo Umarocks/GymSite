@@ -12,9 +12,10 @@ function Navbar() {
   const stopSpin = () => {
     setSpin(false);
   };
+
   const [sticky, setSticky] = useState(false);
   const handleScroll = () => {
-    if (window.scrollY > 10) {
+    if (window.scrollY > 1136) {
       setSticky(true);
     } else {
       setSticky(false);
@@ -25,10 +26,11 @@ function Navbar() {
   return (
     <>
       <nav
-        className={`flex flex-row bg-transparent items-center justify-between py-8 px-12  fixed top-0 left-0 right-0 w-full z-50 ${
-          sticky ? "bg-black shadow-xl" : ""
+        className={`flex flex-row  items-center justify-between py-8 px-12  fixed top-0 left-0 right-0 w-full z-50 ${
+          sticky ? "bg-black shadow-xl" : "bg-transparent"
         }`}
       >
+        <h3 className="text-white">${window.scrollY}</h3>
         <img src="../../../images/logo/logo.svg" alt="logo_img" />
         <NavList />
         <div className="flex items-center gap-10">
